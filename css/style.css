@@ -1,0 +1,146 @@
+/* RESET BASE */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* NAVIGAZIONE */
+nav { 
+    background-color: #333; 
+    padding: 25px 20px; 
+    margin-bottom: 20px; 
+    border-radius: 5px; 
+    display: flex;          
+    justify-content: center; /* Centra perfettamente i link HTML nello spazio */
+    align-items: center;    
+    position: relative;      /* FONDAMENTALE: Fa da recinto per il bottone assoluto */
+}
+nav a { 
+    color: white; 
+    text-decoration: none; 
+    margin: 0 15px;          /* Diamo un margine equo sia a destra che a sinistra ai link */
+    font-size: 16px; 
+    font-weight: bold;
+}
+nav a:hover { color: #ff9800; }
+
+/* Bottone esci personalizzato con icona e sfondo rosso */
+.btn-logout {
+    position: absolute;
+    right: 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    width: auto; /* <-- IL SEGRETO È QUI: annulla il 100% degli altri bottoni */
+    transition: background 0.2s;
+}
+.btn-logout:hover { background-color: #d32f2f; }
+
+/* STRUTTURA PAGINA */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h1,
+h2 {
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ff9800;
+    padding-bottom: 5px;
+}
+
+/* FORM E INPUT */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 350px;
+    margin: 0 auto 20px auto;
+    text-align: left;
+}
+
+form label {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: -5px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+button {
+    padding: 12px;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #e68a00;
+}
+
+.btn-rosso {
+    background-color: #f44336;
+}
+
+.btn-rosso:hover {
+    background-color: #d32f2f;
+}
+
+/* GRIGLIA RICETTE */
+#griglia-ricette,
+#griglia-ricettario {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card-ricetta {
+    width: 200px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    background: #fafafa;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-ricetta img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}

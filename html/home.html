@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - PGRC</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home.html">Home (Ricerca)</a>
+            <a href="ricettario.html">Mio Ricettario</a>
+            <a href="profilo.html">Profilo</a>
+            <button id="btn-esci" class="btn-logout">🚪 Esci</button>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Cerca Ricette</h2>
+        <form id="form-cerca">
+            <input type="text" id="input-ricerca" placeholder="Es. Pasta, Chicken..." required>
+            <button type="submit">Cerca</button>
+        </form>
+
+        <section id="griglia-ricette">
+            </section>
+    </main>
+
+    <script src="../js/app.js"></script>
+</body>
+</html>
