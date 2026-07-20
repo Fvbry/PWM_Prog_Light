@@ -126,6 +126,8 @@ document.addEventListener("DOMContentLoaded", async function() {
                     trovato = true;
                     setUtenteAttivo(user);
                     window.location.href = "home.html";
+
+                    return; // EDIT: Ferma il ciclo
                 }
             }
 
@@ -194,6 +196,7 @@ document.addEventListener("DOMContentLoaded", async function() {
             griglia.innerHTML = "<p>Non hai ancora salvato nulla.</p>";
         } else {
             griglia.innerHTML = "<p>Caricamento ricette salvate...</p>";
+            // Errore dead code
             let idRaccolti = "";
             
             // Ciclo per scaricare i dettagli di ciascun ID salvato nell'utente
